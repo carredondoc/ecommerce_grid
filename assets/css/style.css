@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(136, 136, 136);
+  
+}
+
+main {
+  font-family: "Nunito Sans", sans-serif;
+  display: grid;
+  background-color: azure;
+  border-top: solid 1px black;
+  width: 1200px;
+  margin: auto;
+  grid-template-columns: 1fr 6fr;
+  grid-template-areas:
+    "nav nav"
+    "aside productos"
+    "pie pie";
+    
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  row-gap: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuHome li {
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+.menuLateral{
+
+  line-height: 30px;
+  font-size: 12px;
+  padding-top: 25px;
+}
+
+span{
+
+  color: gray;
+}
+.nav {
+  grid-area: nav;
+  border-bottom: solid rgb(161, 161, 161) 1px;
+  background-color: rgb(240, 240, 240);
+}
+
+.aside {
+  grid-area: aside;
+  padding-left: 15px;
+  border-right: solid rgb(161, 161, 161) 1px;
+  background-color: rgb(233, 235, 255);
+  padding-top: 25px;
+}
+
+.productos {
+  grid-area: productos;
+}
+
+.pie {
+  grid-area: pie;
+  text-align: center;
+  border-top: 1px solid gray;
+  background-color: rgb(240, 240, 240);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.tarjeta {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  align-items: center;
+  border: solid black 2px;
+}
+
+.tarjeta p{
+
+  font-weight: bold;
+  margin: 5px;
+}
+button{
+
+  background-color: rgb(149, 201, 250);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+ border: none;
+ border-top: solid 2px;
+  cursor: pointer;
+}
+.aside ul {
+  list-style-type: none;
+  cursor: pointer;
+}
